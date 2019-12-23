@@ -1,0 +1,7 @@
+version: '2.3'
+services: 
+    server:
+        build: ./zmq
+        command: python3 zmq_server.py
+        ports: 
+            - 5555:5555
